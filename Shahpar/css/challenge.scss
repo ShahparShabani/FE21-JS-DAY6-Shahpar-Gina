@@ -17,6 +17,7 @@ body {
 
   a {
     cursor: pointer;
+    text-decoration: none;
   }
 
   #result {
@@ -31,10 +32,6 @@ body {
       object-fit: contain;
     }
 
-    .card-body {
-      height: 40vh;
-      overflow: scroll;
-    }
   }
 }
 

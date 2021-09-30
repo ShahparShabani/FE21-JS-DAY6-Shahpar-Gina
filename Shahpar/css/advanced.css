@@ -23,13 +23,6 @@
      object-fit: contain;
 }
 
-#main-container #result .big-img {
-  height: 50vh;
-  width: auto;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-
 #main-container #result .card-body {
   height: 40vh;
   overflow: scroll;
@@ -42,4 +35,4 @@
 .not-read {
   background-color: #a76c79;
 }
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=advanced.css.map */
