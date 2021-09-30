@@ -12,7 +12,7 @@ for (let i = 0; i < booksParse.length; i++) {
     <img class=small-img src="../img/${booksParse[i].image
         }" class="card-img-top" alt="small car photo">
     <div class="card-body ${readParse ? "read" : "not-read"}">
-      <h5 class="card-title"><a class="" data-bs-toggle="modal" data-bs-target="#exampleModal${i}">
+      <h5 class="card-title"><a class="" data-bs-toggle="modal" data-bs-target="#carModal${i}">
       ${booksParse[i].title}
     </a></h5>
        
@@ -21,7 +21,7 @@ for (let i = 0; i < booksParse.length; i++) {
   </div>  
   
   <!-- Modal -->
-  <div class="modal fade" id="exampleModal${i}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="carModal${i}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered ">
       <div class="modal-content">
         <div class="modal-header">
