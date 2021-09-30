@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+body {
+  
+}
+
+#main-container {
+  margin: auto;
+  padding: 3rem;
+
+  h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px #6b2f2f;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Dancing Script", cursive !important;
+  }
+
+  #result {
+    img {
+      height: 30vh;
+      width: auto;
+      object-fit: contain;
+    }
+
+.card-body {
+    height: 40vh;
+    overflow: scroll;
+}
+  }
+}
+
+.read {
+  background-color: rgb(169, 202, 136);
+}
+
+.not-read {
+  background-color: rgb(167, 108, 121);
+}
