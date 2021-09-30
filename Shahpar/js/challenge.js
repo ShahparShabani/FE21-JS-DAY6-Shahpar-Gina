@@ -3,15 +3,14 @@ console.log(books);
 let booksParse = JSON.parse(books);
 console.log(booksParse.length);
 
-for (let i=0 ;  i < booksParse.length ; i++) {
-  let readParse = JSON.parse(booksParse[i].read);
+for (let i = 0; i < booksParse.length; i++) {
+    let readParse = JSON.parse(booksParse[i].read);
 
-  document.getElementById(
-    "result"
-  ).innerHTML += `<div class="col-4"><div class="card" style="width: 18rem;">
-    <img class=small-img src="../img/${
-        booksParse[i].image
-    }" class="card-img-top" alt="small car photo">
+    document.getElementById(
+        "result"
+    ).innerHTML += `<div class="col-lg-4 col-md-6 col-sm-12"><div class="card" style="width: 18rem;">
+    <img class=small-img src="../img/${booksParse[i].image
+        }" class="card-img-top" alt="small car photo">
     <div class="card-body ${readParse ? "read" : "not-read"}">
       <h5 class="card-title"><a class="" data-bs-toggle="modal" data-bs-target="#exampleModal${i}">
       ${booksParse[i].title}
@@ -30,14 +29,12 @@ for (let i=0 ;  i < booksParse.length ; i++) {
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-        <img class=big-img src="../img/${
-            booksParse[i].image
+        <img class=big-img src="../img/${booksParse[i].image
         }" class="card-img-top" alt="big car photo">
         <p>Description: ${booksParse[i].shortDescription}</p>
         <p>Pages: ${booksParse[i].pageCount}</p>
-        <p>Read: ${
-            booksParse[i].read
-          } </p> 
+        <p>Read: ${booksParse[i].read
+        } </p> 
           <br/>
         </div>
         <div class="modal-footer">

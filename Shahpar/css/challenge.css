@@ -31,6 +31,10 @@
      object-fit: contain;
 }
 
+#main-container #result .card {
+  margin-top: 1.5rem;
+}
+
 .read {
   background-color: #a9ca88;
 }
